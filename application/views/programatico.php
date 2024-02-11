@@ -38,10 +38,20 @@
 
                 <div class="col-4 text-center">
 
+                    <!-- <div class="card mb-2 profundidad2">
+                        <div class="card-body edge2">
+
+                        </div>
+                    </div> -->
+
+                </div>
+
+                <div class="col-4 text-center">
+
                     <div class="card mb-2 profundidad2">
                         <div class="card-body edge2">
 
-                            <h5> <b>Ingresa números de empleado:</b></h5>                            
+                            <h5> <b>Ingresa dato:</b></h5>                            
                             <br>
 
                             <form id="ingresarReg" @submit.prevent="ingresarNumeros()">
@@ -76,17 +86,7 @@
                     </div> -->
 
                 </div>
-                
-                <div class="col-4 text-center">
 
-                    <!-- <div class="card mb-2 profundidad2">
-                        <div class="card-body edge2">
-
-                        </div>
-                    </div> -->
-
-                </div>
-            
             </div>
         </div>
 
@@ -104,21 +104,23 @@
                             <tbody>  
                                 <thead class="primero" border="1">
                                     <tr>
-                                        <td id="uno" colspan="8" align="center"><b>UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO </b><br>												
-                                        <b>PATRONATO UNIVERSITARIO</b>	<br>												
-                                        <b>TESORERÍA</b>	<br>												
-                                        <b>DIRECCIÓN GENERAL DE CONTROL PRESUPUESTAL</b>	<br>												
-                                        <b>INTEGRACIÓN DE LOS ACTOS O ACTIVIDADES PAGADOS DURANTE EL PERIODO</b>
-                                        
-                                        <div id="current_date" align="right">
-                                            <script>
-                                                date = new Date();
-                                                year = date.getFullYear();
-                                                month = date.getMonth() + 1;
-                                                day = date.getDate();
-                                                document.getElementById("current_date").innerHTML = "<strong>"+day + "/" + month + "/" + year+"</strong>";
-                                            </script>
-                                        </div>
+                                        <td id="uno" colspan="8" align="center">
+                                        <!-- <b>Cabecera</b><br>												
+                                        <b>/b>	<br>												
+                                        <b></b>	<br>												
+                                        <b></b>	<br>												
+                                        <b></b> -->
+                                        </td>
+                                        <td id="" align="center">
+                                            <div id="current_date" align="right">
+                                                <script>
+                                                    date = new Date();
+                                                    year = date.getFullYear();
+                                                    month = date.getMonth() + 1;
+                                                    day = date.getDate();
+                                                    document.getElementById("current_date").innerHTML = "<strong>"+day + "/" + month + "/" + year+"</strong>";
+                                                </script>
+                                            </div>
                                         </td>
                                     </tr>
                                 </thead>
