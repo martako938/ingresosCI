@@ -53,7 +53,7 @@
                 <p class="card-text" style="text-align:center">
                     </br>  
                     Hecho en México, Derechos reservados, {{ this.anio }}. Esta página no puede ser reproducida.</br>
-                    Version 2.2.0.  Última Actualización: {{ this.diaNombre }} {{ this.dia }} de  {{ this.mesNombre }} de {{ this.anio }}.</br>
+                    Versión <?php echo $Version ?>.  Última Actualización: {{ this.diaNombre }} {{ this.dia }} de  {{ this.mesNombre }} de {{ this.anio }}.</br>
                     Departamento de Sistemas</br></br>
                     <a href="#" data-bs-toggle="modal" data-bs-target="#modalMap" ><u> Dirección: Calle 103 Lt 6-A, Hank González, Ecatepec de Morelos ,Edo. México, C.P., 55520</u></a>
                 </p>

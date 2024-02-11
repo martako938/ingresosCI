@@ -37,7 +37,7 @@
                 <form class="position-absolute top-50 end-0 translate-middle-y">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link titulo6" href="www.google.com.mx">&nbsp;&nbsp;&nbsp;Cerrar Sesión</a>
+                            <a class="nav-link titulo6" href="https://www.google.com/">&nbsp;&nbsp;&nbsp;Cerrar Sesión</a>
                         </li>
                     </ul>
                 </form>

@@ -16,7 +16,7 @@ const appContacto = Vue.createApp({
     },
     methods: {
         traerfechaCompleta(){
-            var fecha= '10-02-2024'
+            var fecha= '11-02-2024'
             var url=base+ 'contacto/traeFechComp/'+fecha
             axios.get(url)                                              // Traer la fecha actual compuesta
             .then(res =>{

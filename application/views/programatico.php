@@ -3,12 +3,6 @@
         <span v-html="appLoader"></span></p>
     </div> 
 
-    <div class="row">
-        <div class="col-1"></div>
-        <div class="col-4"><h4>Módulo: Cálculo Inicio</h4></div>
-        <div class="col-7"></div>
-    </div>
-    </br>
 
     <ol v-if="viewEntrada === true" class="breadcrumb sinFondo">
             <li class="breadcrumb-item-active" aria-current="page" ><text class="titulo6"><a>Entrada/</a></text></li>

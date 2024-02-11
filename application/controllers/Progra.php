@@ -7,16 +7,16 @@ class Progra extends CI_Controller {
 		parent::__construct();
 		$this->load->model('Index_Model');
 		$this->load->model('Progra_Model');
-		$this->load->model('Usuario');
 	}
 
 	public function index(){
-		//$datos['usuarios'] = $this->Usuario->seleccionar_todo();
+		$data['Version'] = $this->config->item('version');
+
         $this->load->view('template/head');
 		$this->load->view('template/sup');				
 		$this->load->view('programatico');		
 		$this->load->view('indxJS/pro' );
-        $this->load->view('template/foot');
+        $this->load->view('template/foot',$data);
     }
 
 	public function traeSal(){

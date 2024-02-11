@@ -531,9 +531,10 @@ $config['rewrite_short_tags'] = FALSE;
 */
 $config['proxy_ips'] = '';
 
-//$config['HTTP_NUMEMP'] = 860983;
-$config['HTTP_NUMEMP'] = 910543;
+//$config['HTTP_NUMEMP'] = 1;
 //$config['HTTP_NUMEMP'] = $_SERVER['HTTP_NUMEMP'];
+
+$config['version'] = '2.3.0';
 
 
 date_default_timezone_set('America/Mexico_City');
