@@ -29,10 +29,10 @@ class Progra extends CI_Controller {
 		 echo json_encode($datos);
    	}
 
-	public function borraEnt(){
-		$datos = $this->Progra_Model->borrar_entrada(); 
-		echo json_encode($datos);
-   	}
+	// public function borraEnt(){
+	// 	$datos = $this->Progra_Model->borrar_entrada(); 
+	// 	echo json_encode($datos);
+   	// }
 
 	public function ingresaNum(){
 		$vcNumsFil = ''; $vcNumslim='';

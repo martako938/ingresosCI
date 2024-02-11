@@ -25,7 +25,7 @@
         <div v-if="viewEntrada">
             <div class="row">
 
-                <div class="col-4 text-center">
+                <!-- <div class="col-4 text-center">
                     <div class="card mb-2 profundidad2">
                         <div class="card-body edge2">
 
@@ -40,7 +40,7 @@
                         </div>
                     </div>
 
-                </div>
+                </div> -->
 
                 <div class="col-4 text-center">
 
@@ -73,6 +73,16 @@
 
                 </div>
 
+                <div class="col-4 text-center">
+
+                    <!-- <div class="card mb-2 profundidad2">
+                        <div class="card-body edge2">
+
+                        </div>
+                    </div> -->
+
+                </div>
+                
                 <div class="col-4 text-center">
 
                     <!-- <div class="card mb-2 profundidad2">

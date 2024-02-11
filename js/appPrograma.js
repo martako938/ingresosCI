@@ -206,24 +206,24 @@ const appPrograma = Vue.createApp({
                 }   
             })
         },
-        borrarEntrada() {                        //Borra la tabla de entrada 
-            this.loading = true
-            var url = base + 'progra/borraEnt'
-            axios.get(url)
-            .then(res => {
-                this.traerEntrada()
-                this.loading = false
-                console.log('Borrado correcto de la entrada');
-                ico = this.datosMensaje('exito','¡Éxito!','Se ha borrado correctamente los registros existentes')
-                var title = 'Registros borrados';  this.msjAlert(ico,title)
-            }).catch((error)=>{
-                this.traerEntrada()
-                this.loading = false
-                console.log('Error al borrar la entrada');
-                ico = this.datosMensaje('error','¡Error!','Hubo un error al borrar tabla. Intentelo de nuevo')
-                var title = 'Error Borrando';  this.msjAlert(ico,title);
-            })
-        },
+        // borrarEntrada() {                        //Borra la tabla de entrada 
+        //     this.loading = true
+        //     var url = base + 'progra/borraEnt'
+        //     axios.get(url)
+        //     .then(res => {
+        //         this.traerEntrada()
+        //         this.loading = false
+        //         console.log('Borrado correcto de la entrada');
+        //         ico = this.datosMensaje('exito','¡Éxito!','Se ha borrado correctamente los registros existentes')
+        //         var title = 'Registros borrados';  this.msjAlert(ico,title)
+        //     }).catch((error)=>{
+        //         this.traerEntrada()
+        //         this.loading = false
+        //         console.log('Error al borrar la entrada');
+        //         ico = this.datosMensaje('error','¡Error!','Hubo un error al borrar tabla. Intentelo de nuevo')
+        //         var title = 'Error Borrando';  this.msjAlert(ico,title);
+        //     })
+        // },
         
         msjAlertTimeOut(title) {
             var ico = this.datosMensaje('error', '¡Oops!', ' ... El servidor ha tardado mucho en responder, intente de nuevo  más tarde.')

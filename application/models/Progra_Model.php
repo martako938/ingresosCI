@@ -78,18 +78,18 @@ class Progra_Model extends Index_Model{
         return $Out;
     }
 
-    public function borrar_entrada(){
-        // $database= 'dbsisestadistico';
-        // $table = 'tRepGastosGMM';
-        $database= 'ingresos';
-        $table = 'usuarios';
-        $this-> $database = $this->load->database($database, TRUE);
-        $sql="TRUNCATE TABLE ".$table."; ";   
-        $query = $this->$database->query($sql); 
-        $Out=0;
-        $this->$database->close();
-        return $Out;
-    }
+    // public function borrar_entrada(){
+    //     // $database= 'dbsisestadistico';
+    //     // $table = 'tRepGastosGMM';
+    //     $database= 'ingresos';
+    //     $table = 'usuarios';
+    //     $this-> $database = $this->load->database($database, TRUE);
+    //     $sql="TRUNCATE TABLE ".$table."; ";   
+    //     $query = $this->$database->query($sql); 
+    //     $Out=0;
+    //     $this->$database->close();
+    //     return $Out;
+    // }
 
     public function seleccionar_ingresos(){
         // $database= 'dbsisestadistico';
