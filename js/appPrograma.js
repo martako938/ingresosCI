@@ -44,7 +44,7 @@ const appPrograma = Vue.createApp({
                 this.loading = false
                 ico = this.datosMensaje('exito','¡Éxito!','Se han agregado correctamente los registros')
                 var title = 'Registros agregados';  this.msjAlert(ico,title)
-                this.traerEntrada()                                                 //Actualizar estado del boton borrar datos al ingresar nuevos numeros
+                //this.traerEntrada()                                                 //Actualizar estado del boton borrar datos al ingresar nuevos numeros
             }).catch((error) => {
                 ico = this.datosMensaje('error','¡Error!','Hubo un error agregando los datos. Intentelo de nuevo')
                 var title = 'Error Restableciendo';  this.msjAlert(ico,title);
@@ -146,7 +146,7 @@ const appPrograma = Vue.createApp({
                     .then(res => {
                         this.salida = res.data
                         this.loading = false
-                        this.traerEntrada()             //Actualizar estado del boton borrar datos al obtener codigos
+                        //this.traerEntrada()             //Actualizar estado del boton borrar datos al obtener codigos
                         this.irSalida()
                     })
         },
@@ -176,20 +176,20 @@ const appPrograma = Vue.createApp({
                 if (result.isConfirmed) {    }
             })
         },
-        traerEntrada() {                        //Trae la tabla de entrada para hacer funcionar boton de borrar
-            this.loading = true
-            var url = base + 'progra/traeEnt'
-            axios.get(url)
-            .then(res => {
-                if(res.data == '' || res.data == null){
-                    this.loading = false
-                    return this.existenDatos= false
-                }else{
-                    this.loading = false
-                    return this.existenDatos= true
-                }   
-            })
-        },
+        // traerEntrada() {                        //Trae la tabla de entrada para hacer funcionar boton de borrar
+        //     this.loading = true
+        //     var url = base + 'progra/traeEnt'
+        //     axios.get(url)
+        //     .then(res => {
+        //         if(res.data == '' || res.data == null){
+        //             this.loading = false
+        //             return this.existenDatos= false
+        //         }else{
+        //             this.loading = false
+        //             return this.existenDatos= true
+        //         }   
+        //     })
+        // },
         traerIngresos() {                        //Trae la tabla de ingresos
             this.loading = true
             var url = base + 'progra/traeIngre'
