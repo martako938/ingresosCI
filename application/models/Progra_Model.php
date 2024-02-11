@@ -2,15 +2,15 @@
 class Progra_Model extends Index_Model{
 
     public function seleccionar_salida(){
-        $database= 'dbsisestadistico';
-        // $database= 'default';
+        // $database= 'dbsisestadistico';
+        $database= 'ingresos';
         $qna= 202401;
         $this-> $database = $this->load->database($database, TRUE);
-        $sql = "EXEC sp_ReporteGastosGMM ?";
-        // $sql=" SELECT ID, vcUsuario, iNumEmp, iNumEmpLargo, Dependencia, PR, SP, DEP, SD, PARTIDA 
-        //         FROM usuarios;";
-        $query = $this->dbsisestadistico->query($sql, array($qna));
-        // $query = $this->$database->query($sql, array());
+        // $sql = "EXEC sp_ReporteGastosGMM ?";
+        $sql=" SELECT ID, vcUsuario, iNumEmp, iNumEmpLargo, Dependencia, PR, SP, DEP, SD, PARTIDA 
+                FROM usuarios;";
+        // $query = $this->dbsisestadistico->query($sql, array($qna));
+        $query = $this->$database->query($sql, array());
         $this->$database->close();
         $Out = array();
         foreach ( $query->result_array() as $row ){
@@ -19,7 +19,7 @@ class Progra_Model extends Index_Model{
                 // 'vcUsuario' => $row['vcUsuario'],
                 'iNumEmp'  => $row['iNumEmp'],
                 'iNumEmpLargo'  => $row['iNumEmpLargo'],
-                'vcDependencia'  => utf8_encode($row['Dependencia']),
+                'vcDependencia'  => $row['Dependencia'],
                 'iPR' => $row['PR'],
                 'iSP' => $row['SP'],
                 'iDEP' => $row['DEP'],
@@ -31,10 +31,10 @@ class Progra_Model extends Index_Model{
     }
     
     public function ingresaNumeros($numerosletra,$numeros){
-        $database= 'dbsisestadistico';
-        $table = 'tRepGastosGMM';
-        // $database= 'default';
-        // $table = 'usuarios';
+        // $database= 'dbsisestadistico';
+        // $table = 'tRepGastosGMM';
+        $database= 'ingresos';
+        $table = 'usuarios';
         $limit= count($numerosletra);
         $this-> $database = $this->load->database($database, TRUE);
         for ($i=0;$i<$limit;$i++){                                          //Ingresa datos de los dos arreglos
@@ -57,10 +57,10 @@ class Progra_Model extends Index_Model{
     }
 
     public function seleccionar_entrada(){
-        $database= 'dbsisestadistico';
-        $table = 'tRepGastosGMM';
-        // $database= 'default';
-        // $table = 'usuarios';
+        // $database= 'dbsisestadistico';
+        // $table = 'tRepGastosGMM';
+        $database= 'ingresos';
+        $table = 'usuarios';
         $this-> $database = $this->load->database($database, TRUE);
         $sql="SELECT * FROM ".$table."; ";   
         $query = $this->$database->query($sql); 
@@ -79,10 +79,10 @@ class Progra_Model extends Index_Model{
     }
 
     public function borrar_entrada(){
-        $database= 'dbsisestadistico';
-        $table = 'tRepGastosGMM';
-        // $database= 'default';
-        // $table = 'usuarios';
+        // $database= 'dbsisestadistico';
+        // $table = 'tRepGastosGMM';
+        $database= 'ingresos';
+        $table = 'usuarios';
         $this-> $database = $this->load->database($database, TRUE);
         $sql="TRUNCATE TABLE ".$table."; ";   
         $query = $this->$database->query($sql); 
