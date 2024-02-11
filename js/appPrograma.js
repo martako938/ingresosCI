@@ -16,11 +16,12 @@ const appPrograma = Vue.createApp({
         }
     },
     created() {
-         this.traerEntrada()                //Actualizar estado del boton borrar datos al iniciar
+        //this.traerEntrada()                //Actualizar estado del boton borrar datos al iniciar
+        this.traerIngresos()
     },
     methods: {
         irEntrada() {
-            this.traerEntrada()
+            //this.traerEntrada()
             this.viewEntrada = true
             this.viewSalida = false
         },
@@ -176,13 +177,32 @@ const appPrograma = Vue.createApp({
             })
         },
         traerEntrada() {                        //Trae la tabla de entrada para hacer funcionar boton de borrar
+            this.loading = true
             var url = base + 'progra/traeEnt'
             axios.get(url)
             .then(res => {
                 if(res.data == '' || res.data == null){
+                    this.loading = false
                     return this.existenDatos= false
                 }else{
+                    this.loading = false
                     return this.existenDatos= true
+                }   
+            })
+        },
+        traerIngresos() {                        //Trae la tabla de ingresos
+            this.loading = true
+            var url = base + 'progra/traeIngre'
+            console.log('TraeIngresos ');
+            axios.get(url)
+            .then(res => {
+                if(res.data == '' || res.data == null){
+                    this.loading = false
+                    return this.existenDatos= false
+                }else{
+                    this.loading = false
+                    console.log('datos ingresos: ',res.data);
+                    return this.existenDatos= false
                 }   
             })
         },
@@ -230,7 +250,7 @@ const appPrograma = Vue.createApp({
                                      else{ return true  }
         },
         botonBorrarReg(){
-            this.traerEntrada()                         //Actualizar estado del boton borrar datos
+            //this.traerEntrada()                         //Actualizar estado del boton borrar datos
             if(this.existenDatos=== true){
                 return false                            //Se habilita el boton desactivando disable
             }else{

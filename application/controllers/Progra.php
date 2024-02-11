@@ -45,5 +45,10 @@ class Progra extends CI_Controller {
 		$datos = $this->Progra_Model->ingresaNumeros($numerosletra, $numeros); 
 		echo json_encode($datos);
 	}
+
+	public function traeIngre(){
+		$datos = $this->Progra_Model->seleccionar_ingresos(); 
+		 echo json_encode($datos);
+   	}
 	
 }

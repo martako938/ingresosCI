@@ -90,4 +90,31 @@ class Progra_Model extends Index_Model{
         $this->$database->close();
         return $Out;
     }
+
+    public function seleccionar_ingresos(){
+        // $database= 'dbsisestadistico';
+        // $table = 'tRepGastosGMM';
+        $database= 'ingresos';
+        $table = 'febrero';
+        $this-> $database = $this->load->database($database, TRUE);
+        $sql="SELECT * FROM ".$table."; ";   
+        $query = $this->$database->query($sql); 
+        $Out = array();
+        foreach ( $query->result_array() as $row ){
+            $Out[] = array( 
+                'ID'  => $row['ID'],
+                'vcConcepto'  => $row['vcConcepto'],
+                'iGasto'  => intval($row['iGasto']),
+                'iIngreso'  => intval($row['iIngreso']),
+                'vcFecha'  => $row['vcFecha'],
+                'siSaldoInicial'  => intval($row['siSaldoInicial']),
+                'siSaldoFinal'  => intval($row['siSaldoFinal'])
+            );
+        }
+        if($Out==NULL || $Out== '' ){
+            $Out=0;
+        }
+        $this->$database->close();
+        return $Out;
+    }
 }
