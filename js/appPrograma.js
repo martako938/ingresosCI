@@ -16,12 +16,12 @@ const appPrograma = Vue.createApp({
         }
     },
     created() {
-        //this.traerEntrada()                //Actualizar estado del boton borrar datos al iniciar
-        this.traerIngresos()
+        this.traerEntrada()                //Actualizar estado del boton borrar datos al iniciar
+        //this.traerIngresos()
     },
     methods: {
         irEntrada() {
-            //this.traerEntrada()
+            this.traerEntrada()
             this.viewEntrada = true
             this.viewSalida = false
         },
@@ -190,22 +190,22 @@ const appPrograma = Vue.createApp({
                 }   
             })
         },
-        traerIngresos() {                        //Trae la tabla de ingresos
-            this.loading = true
-            var url = base + 'progra/traeIngre'
-            console.log('TraeIngresos ');
-            axios.get(url)
-            .then(res => {
-                if(res.data == '' || res.data == null){
-                    this.loading = false
-                    return this.existenDatos= false
-                }else{
-                    this.loading = false
-                    console.log('datos ingresos: ',res.data);
-                    return this.existenDatos= false
-                }   
-            })
-        },
+        // traerIngresos() {                        //Trae la tabla de ingresos
+        //     this.loading = true
+        //     var url = base + 'progra/traeIngre'
+        //     console.log('TraeIngresos ');
+        //     axios.get(url)
+        //     .then(res => {
+        //         if(res.data == '' || res.data == null){
+        //             this.loading = false
+        //             return this.existenDatos= false
+        //         }else{
+        //             this.loading = false
+        //             console.log('datos ingresos: ',res.data);
+        //             return this.existenDatos= false
+        //         }   
+        //     })
+        // },
         borrarEntrada() {                        //Borra la tabla de entrada 
             this.loading = true
             var url = base + 'progra/borraEnt'
