@@ -534,7 +534,7 @@ $config['proxy_ips'] = '';
 //$config['HTTP_NUMEMP'] = 1;
 //$config['HTTP_NUMEMP'] = $_SERVER['HTTP_NUMEMP'];
 
-$config['version'] = '2.3.0';
+$config['version'] = '2.4.0';
 
 
 date_default_timezone_set('America/Mexico_City');

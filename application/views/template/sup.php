@@ -4,7 +4,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark navSup">
             <div class="container">
                 <div class="navbar-header navbar-left">
-                    <a href="" class="hidden-xs navbar-brand"><img class="mt-2 mb-2 ms-2" alt="UNAM" style="width: 50px" src="<?= base_url('/images/omegaFull.png')?>"></a>   
+                    <a href="" class="hidden-xs navbar-brand"><img class="mt-2 mb-2 ms-2" alt="" style="width: 50px" src="<?= base_url('/images/omegaFull.png')?>"></a>   
                 </div>
                 <div class="navbar-header navbar-center logo text-center">
                     <span class="titulo rtitulo me-4">Cálculo de ingresos y gastos</span><br>

@@ -5,11 +5,11 @@
     .rtitle{
         font-size: 0.9rem!important;
     }
-    .logoUnam{
+    .logoOmega{
         max-width: 63px;
         max-height: 90px;
     }
-    .logoDgp{ 
+    .logo2{ 
         max-width: 60px;
         max-height: 90px;
     }
@@ -212,8 +212,8 @@
 .edge2 {
     border: 1px solid #aca6a6;
 }
-.logoUnam{ width: 4.5em }
-.logoDgp{ width: 4.0em }
+.logoOmega{ width: 4.5em }
+.logo2{ width: 4.0em }
 .butBlue{
     color: white;
     /* --bs-btn-color: #fff; */

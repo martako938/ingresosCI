@@ -1,10 +1,10 @@
 <?php
 class Contacto_Model extends Index_Model{
 
-    //--------------Metodos para App Contacto
+    //--------------Métodos para App Contacto
     public function fechaCompleta($fecha){
         //$hoy=date('d-m-Y');    //$hoy = '30-01-2024'; 
-        $hoy = $fecha;  //Fecha en que se actualizo por última vez a aplicación                                 
+        $hoy = $fecha;  //Fecha en que se actualizó por última vez a aplicación                                 
         $date=$hoy;
         $dia = date('l', strtotime($date));
         $mes = date( 'm', strtotime( $date) );
@@ -22,12 +22,12 @@ class Contacto_Model extends Index_Model{
             10 => array( 0 => "", 1 => "",2 => "noviembre", 3 => "11"),
             11 => array( 0 => "", 1 => "",2 => "diciembre", 3 => "12"),
         );
-        for($i=0;$i<=11;$i++ ){         //Obteniendo el nombre del dia
+        for($i=0;$i<=11;$i++ ){         //Obteniendo el nombre del día
             if($i<=6 && $dia== $diasMesesArray[$i][1]){     $dia= $diasMesesArray[$i][0];   }
             if($mes== $diasMesesArray[$i][3]){              $mes= $diasMesesArray[$i][2];   }     //Obteniendo el mes
         }
-        $idia = substr($hoy,-10,-8); //Num de dia
-        $anio = substr($hoy,-4);    //Anio
+        $idia = substr($hoy,-10,-8); //Num de día
+        $anio = substr($hoy,-4);    //Año
 
         $fechaComp[0]= $dia;
         $fechaComp[1]= $idia;

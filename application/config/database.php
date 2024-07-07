@@ -54,29 +54,3 @@ $db['ingresos'] = array(
 //Conexion BD 
 
 
-// $db['dbsisestadistico'] = array(
-// 	'dsn' => 'odbc:Driver={SQL Server Native Client 11.0};server=castiel.personalds.unam.mx,3314;database=dbsisestadistico',
-// 	'hostname' => '',
-// 	'username' => 'brayan',
-// 	'password' => 'IManTABL',
-// 	'database' => '',
-// 	'dbdriver' => 'pdo',
-// 	'dbprefix' => '',
-// 	'pconnect' => FALSE,
-// 	'db_debug' => TRUE,
-// 	'cache_on' => FALSE,
-// 	'cachedir' => '',
-// 	'char_set' => 'utf8',
-// 	'dbcollat' => 'utf8_general_ci',
-// 	'swap_pre' => '',
-// 	'encrypt' => FALSE,
-// 	'compress' => FALSE,
-// 	'stricton' => FALSE,
-// 	'failover' => array(),
-// 	'save_queries' => TRUE
-// );
-
-// dbsiestadistico
-
-// tRepGastosGMM
-

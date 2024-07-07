@@ -2,7 +2,7 @@ axios.defaults.timeout = 10000;
 const appContacto = Vue.createApp({
     data(){
         return{
-                loading: true,
+                loading: false,
                 appLoader: '<div class="preloader" align="center"><svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple" style="background:0 0"><circle cx="50" cy="50" r="4.719" fill="none" stroke="#1d3f72" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="-1.5s" repeatCount="indefinite"/><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="-1.5s" repeatCount="indefinite"/></circle><circle cx="50" cy="50" r="27.591" fill="none" stroke="#5699d2" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"/></circle></svg></div>',
                 dia: '', diaNombre: '', mesNombre: '', anio: '', 
                 msg_res:'\n* Se realizó la solicitud y el servidor respondió con un código de \nestado que cae fuera del rango de 2xx\nerr.res.status:', res2: '\nerr.res.headers: ', res3: '\n error.response.data: ',
@@ -16,7 +16,8 @@ const appContacto = Vue.createApp({
     },
     methods: {
         traerfechaCompleta(){
-            var fecha= '11-02-2024'
+            this.loading = true
+            var fecha= '07-07-2024'
             var url=base+ 'contacto/traeFechComp/'+fecha
             axios.get(url)                                              // Traer la fecha actual compuesta
             .then(res =>{
