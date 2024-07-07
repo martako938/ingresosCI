@@ -52,7 +52,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                     <div class="modal-header navSup titulo3">
-                        <h1 class="modal-title fs-5 text-center" id="mapModalLabel">  BY OMEGA</h1>
+                        <h1 class="modal-title ms-3 fs-5 text-center" id="mapModalLabel">BY OMEGA</h1>
                         <button type="button" aria-label="Close" class="btn butDark" data-bs-dismiss="modal"><b>X</b></button>
                     </div>
 
