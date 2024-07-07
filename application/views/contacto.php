@@ -7,61 +7,45 @@
         <li class="breadcrumb-item active" aria-current="page"><text class="titulo6">Contacto</text></li>
     </ol>
 
-    <div class="card border-dark mb-3 bg-light profundidad" style="max-width: 80rem;">
+    <div class="card border-dark mb-4 bg-light profundidad2" >
         <div class="card-header navSup titulo3" style="text-align:center"><strong>Cálculo de ingresos y gastos</strong></div>
         <div class="card-body fondoWhite">
         
-                <H5 style="text-align:center">
-                    <strong><span style="color: #172f57;">Contactos</span></strong>
-                </H5>
+            <H5 style="text-align:center">
+                <strong><span style="color: #172f57;">Contactos</span></strong>
+            </H5>
 
-                </br> 
-
-                <div class="row">
-                    <div class="col-sm-2"></div>
-                    
-                    <div class="col-sm-3">
-                        <span style="color: #bd8f16;">
-                        <strong></strong></span>
-                        <br>
-                    </div>
-                    
-                    <div class="col-sm-3">
-                        <span style="color: #bd8f16;">
-                        <strong>Ing. Brayan Cabrera</h5></strong></span> 
-                        <br>Líder de Proyecto
-                        
-                    </div>
-
-                    <div class="col-sm-3">
-                        <span style="color: #bd8f16;">
-                        <strong></strong></span>
-                        <br>
-                        
-                    </div>
-                    
-                    <div class="col-sm-1"></div>
+            <div class="row mt-3 mb-3">
+                <div class="col-sm text-center">
+                    <span style="color: #bd8f16;">
+                    <strong>Ing. Brayan Cabrera</h5></strong></span> 
+                    <br><b>Desarrollador</b>
                 </div>
+            </div>
 
-                </br>  
-                <p class="card-text" style="text-align:center">
+            <div class="card-text" style="text-align:center">
+                <p>
                     <i class="bi bi-at" style="color: #bd8f16 ;margin-right: 5px ;"></i>
                         <a href="mailto:martako938@gmail.com" target="_top">martako938@gmail.com</a>   
-                    <i class="bi bi-telephone-fill" style="color: #bd8f16 ;margin-right: 5px ;"></i><a href="tel:+5215556226124">(56)-3404-4909</a><br/>
+                    <i class="bi bi-telephone-fill" style="color: #bd8f16 ;margin-right: 5px ;"></i><a href="tel:+5215556226124">(56)-3404-4909</a>
                 </p>
 
-                <p class="card-text" style="text-align:center">
-                    </br>  
-                    Hecho en México, Derechos reservados, {{ this.anio }}. Esta página no puede ser reproducida.</br>
-                    Versión <?php echo $Version ?>.  Última Actualización: {{ this.diaNombre }} {{ this.dia }} de  {{ this.mesNombre }} de {{ this.anio }}.</br>
-                    Departamento de Sistemas</br></br>
+                <p class="mb-1" >
+                   <b>Versión: </b><?php echo $Version ?>. <b>  Sistemas</b> 
+                </p>
+                <p class="mb-1" >
+                   <b>Última Actualización:</b> {{ this.diaNombre }} {{ this.dia }} de  {{ this.mesNombre }} de {{ this.anio }}.
+                </p>
+                <p>
+                    Hecho en México {{ this.anio }}. <b>Esta página no puede ser reproducida.</b>
+                </p>
+                <p>
                     <a href="#" data-bs-toggle="modal" data-bs-target="#modalMap" ><u> Dirección: Calle 103 Lt 6-A, Hank González, Ecatepec de Morelos ,Edo. México, C.P., 55520</u></a>
                 </p>
+            </div>
 
         </div>
     </div>
-
-    <hr class="my-4">
 
     <!-- Modal Map-->
     <div class="modal fade" id="modalMap" tabindex="-1" aria-labelledby="modalMap" aria-hidden="true">
@@ -73,7 +57,6 @@
                     </div>
 
                     <div class="modal-body">
-
                         <div class="form-group">                             
                             <div class="mapouter">
                                 <div class="gmap_canvas">
@@ -82,7 +65,6 @@
                                 </div>
                             </div>
                         </div>    
-
                     </div>
 
                     <div class="modal-footer">

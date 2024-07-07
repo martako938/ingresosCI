@@ -4,10 +4,10 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark navSup">
             <div class="container">
                 <div class="navbar-header navbar-left">
-                    <a href="" class="hidden-xs navbar-brand"><img alt="UNAM" style="width: 60px" src="<?= base_url('/images/omegaFull.png')?>"></a>   
+                    <a href="" class="hidden-xs navbar-brand"><img class="mt-2 mb-2 ms-2" alt="UNAM" style="width: 50px" src="<?= base_url('/images/omegaFull.png')?>"></a>   
                 </div>
                 <div class="navbar-header navbar-center logo text-center">
-                    <span class="titulo">Cálculo de ingresos y gastos</span><br>
+                    <span class="titulo rtitulo me-4">Cálculo de ingresos y gastos</span><br>
                     
                 </div>
                 <div class="navbar-header navbar-right">
@@ -37,7 +37,7 @@
                 <form class="position-absolute top-50 end-0 translate-middle-y">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link titulo6" href="https://www.google.com/">&nbsp;&nbsp;&nbsp;Cerrar Sesión</a>
+                            <a class="nav-link titulo6" href="https://www.google.com/">&nbsp;&nbsp;&nbsp;Salir</a>
                         </li>
                     </ul>
                 </form>
