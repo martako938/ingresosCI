@@ -30,6 +30,9 @@
         width: 245px;
         height: 350px;
     }
+    .sizeBut{
+        font-size: 0.65rem!important;
+    }
 }
 .mapSize{
     width: 765px;

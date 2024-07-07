@@ -3,21 +3,20 @@
         <span v-html="appLoader"></span></p>
     </div> 
 
-
     <ol v-if="viewEntrada === true" class="breadcrumb sinFondo">
-            <li class="breadcrumb-item-active" aria-current="page" ><text class="titulo6"><a>Entrada/</a></text></li>
-            <li class="breadcrumb-item" aria-current="page" ><text class="titulo6"><a href="#" @click="irSalida()">Salida</a></text></li>
+        <li class="breadcrumb-item-active" aria-current="page" ><text class="titulo6"><a>Entrada/</a></text></li>
+        <li class="breadcrumb-item" aria-current="page" ><text class="titulo6"><a href="#" @click="irSalida()">Salida</a></text></li>
     </ol> 
 
     <ol v-if="viewSalida === true" class="breadcrumb sinFondo">
-            <li class="breadcrumb-item"><a href="#"  @click="irEntrada()">Entrada</a></li>
-            <li class="breadcrumb-item-active" aria-current="page" ><text class="titulo6"><a> / Salida</a></text></li>       
+        <li class="breadcrumb-item"><a href="#"  @click="irEntrada()">Entrada</a></li>
+        <li class="breadcrumb-item-active" aria-current="page" ><text class="titulo6"><a> / Salida</a></text></li>       
     </ol> 
     
     <div class="container mt3 area4 profundidad">
         <br>
         <div v-if="viewEntrada">
-            <div class="row">
+            <div class="row ms-3 me-4">
 
                 <!-- <div class="col-4 text-center">
                     <div class="card mb-2 profundidad2">
@@ -36,34 +35,24 @@
 
                 </div> -->
 
-                <div class="col-4 text-center">
+                <div class="col ms-4 me-5 text-center">
 
-                    <!-- <div class="card mb-2 profundidad2">
+                    <div class="card ms-4 me-5  mb-1 profundidad2">
                         <div class="card-body edge2">
 
-                        </div>
-                    </div> -->
-
-                </div>
-
-                <div class="col-4 text-center">
-
-                    <div class="card mb-2 profundidad2">
-                        <div class="card-body edge2">
-
-                            <h5> <b>Ingresa dato:</b></h5>                            
+                            <div> <b>Ingresa dato:</b></div>                            
                             <br>
 
                             <form id="ingresarReg" @submit.prevent="ingresarNumeros()">
                                 <p class="card-text">
-                                   <textarea id="vcNums" name="vcNums" rows="4" cols="20" placeholder="Numeros de empleado"  v-model="numerosEmp"></textarea>                                                                                                 
+                                   <textarea id="vcNums" name="vcNums" rows="4" cols="20" placeholder="Numeros de empleado" v-model="numerosEmp" style="width: 80%" class="sizeBut"></textarea>                                                                                                 
                                 </p>
                                 <input type="hidden" id="vcNumsFil" name="vcNumsFil" v-model="cadenas.cadena">
                                 <input type="hidden" id="vcNumslim" name="vcNumslim" v-model="cadenas.cadenalimpia">
 
                                 <div class="btn-group mb-3">
-                                   <button type="button" class="btn btn-outline-success" :disabled="botonEnviarReg" @click="ingresarNumeros()" href="#">Guardar Números</button>
-                                    <button type="button" class="btn btn-outline-warning"  @click="traerSalida">Obtener Códigos</button>
+                                   <button type="button" class="btn btn-outline-success sizeBut" :disabled="botonEnviarReg" @click="ingresarNumeros()" href="#">Guardar Números</button>
+                                    <button type="button" class="btn btn-outline-warning sizeBut"  @click="traerSalida">Obtener Códigos</button>
 
                                 </div>
 
@@ -74,16 +63,6 @@
 
                         </div>
                     </div>
-
-                </div>
-
-                <div class="col-4 text-center">
-
-                    <!-- <div class="card mb-2 profundidad2">
-                        <div class="card-body edge2">
-
-                        </div>
-                    </div> -->
 
                 </div>
 
