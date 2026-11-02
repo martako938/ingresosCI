@@ -204,6 +204,10 @@ const appPrograma = Vue.createApp({
                     console.log('datos ingresos: ',res.data);
                     return this.existenDatos= false
                 }   
+            }).catch((error)=>{
+                console.log(error);
+                this.loading = false
+            
             })
         },
         // borrarEntrada() {                        //Borra la tabla de entrada 
